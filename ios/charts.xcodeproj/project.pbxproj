@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		24416B8111C4CA220047AFDD /* Build & Test */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */;
+			buildPhases = (
+				24416B8011C4CA220047AFDD /* ShellScript */,
+			);
+			dependencies = (
+				24416B8511C4CA280047AFDD /* PBXTargetDependency */,
+			);
+			name = "Build & Test";
+			productName = "Build & test";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		24DD6CF91134B3F500162E58 /* TiChartsModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DD6CF71134B3F500162E58 /* TiChartsModule.h */; };
+		24DD6CFA1134B3F500162E58 /* TiChartsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DD6CF81134B3F500162E58 /* TiChartsModule.m */; };
+		24DE9E1111C5FE74003F90F6 /* TiChartsModuleAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DE9E0F11C5FE74003F90F6 /* TiChartsModuleAssets.h */; };
+		24DE9E1211C5FE74003F90F6 /* TiChartsModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* TiChartsModuleAssets.m */; };
+		A250D63913B503DB00CCF89C /* TiChartsLinePlotProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A250D63713B503DB00CCF89C /* TiChartsLinePlotProxy.h */; };
+		A250D63A13B503DB00CCF89C /* TiChartsLinePlotProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A250D63813B503DB00CCF89C /* TiChartsLinePlotProxy.m */; };
+		A250D68413B5641A00CCF89C /* TiChartsPiePlotProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A250D68213B5641A00CCF89C /* TiChartsPiePlotProxy.h */; };
+		A250D68513B5641A00CCF89C /* TiChartsPiePlotProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A250D68313B5641A00CCF89C /* TiChartsPiePlotProxy.m */; };
+		A2818D9214D36C9900F27ECA /* TiChartsLabelFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A2818D8E14D36C9900F27ECA /* TiChartsLabelFormatter.h */; };
+		A2818D9314D36C9900F27ECA /* TiChartsLabelFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A2818D8F14D36C9900F27ECA /* TiChartsLabelFormatter.m */; };
+		A2818D9414D36C9900F27ECA /* TiChartsScatterPlotProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A2818D9014D36C9900F27ECA /* TiChartsScatterPlotProxy.h */; };
+		A2818D9514D36C9900F27ECA /* TiChartsScatterPlotProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2818D9114D36C9900F27ECA /* TiChartsScatterPlotProxy.m */; };
+		A296E82D13B9149700078A0D /* TiChartsParsers.h in Headers */ = {isa = PBXBuildFile; fileRef = A296E82B13B9149700078A0D /* TiChartsParsers.h */; };
+		A296E82E13B9149700078A0D /* TiChartsParsers.m in Sources */ = {isa = PBXBuildFile; fileRef = A296E82C13B9149700078A0D /* TiChartsParsers.m */; };
+		A2CDDAD413AFA8E80070F957 /* TiChartsChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CDDAD213AFA8E80070F957 /* TiChartsChart.h */; };
+		A2CDDAD513AFA8E80070F957 /* TiChartsChart.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDDAD313AFA8E80070F957 /* TiChartsChart.m */; };
+		A2CDDB5E13AFDC7C0070F957 /* TiChartsChartProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A2CDDB5C13AFDC7C0070F957 /* TiChartsChartProxy.h */; };
+		A2CDDB5F13AFDC7C0070F957 /* TiChartsChartProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2CDDB5D13AFDC7C0070F957 /* TiChartsChartProxy.m */; };
+		A2CDDBEA13AFE59A0070F957 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CDDBE913AFE59A0070F957 /* QuartzCore.framework */; };
+		A2CDDBEC13AFE5AF0070F957 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2CDDBEB13AFE5AF0070F957 /* libCorePlot-CocoaTouch.a */; };
+		A2D8200C13B3D2E600E057CC /* TiChartsBarPlotProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D8200A13B3D2E600E057CC /* TiChartsBarPlotProxy.h */; };
+		A2D8200D13B3D2E600E057CC /* TiChartsBarPlotProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2D8200B13B3D2E600E057CC /* TiChartsBarPlotProxy.m */; };
+		A2E3C5AF13BACB78001CCC8C /* TiChartsPlotProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = A2E3C5AD13BACB78001CCC8C /* TiChartsPlotProxy.h */; };
+		A2E3C5B013BACB78001CCC8C /* TiChartsPlotProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E3C5AE13BACB78001CCC8C /* TiChartsPlotProxy.m */; };
+		AA747D9F0F9514B9006C5449 /* TiCharts_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* TiCharts_Prefix.pch */; };
+		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24416B8411C4CA280047AFDD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24DD6CF71134B3F500162E58 /* TiChartsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsModule.h; path = Classes/TiChartsModule.h; sourceTree = "<group>"; };
+		24DD6CF81134B3F500162E58 /* TiChartsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsModule.m; path = Classes/TiChartsModule.m; sourceTree = "<group>"; };
+		24DD6D1B1134B66800162E58 /* titanium.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = titanium.xcconfig; sourceTree = "<group>"; };
+		24DE9E0F11C5FE74003F90F6 /* TiChartsModuleAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsModuleAssets.h; path = Classes/TiChartsModuleAssets.h; sourceTree = "<group>"; };
+		24DE9E1011C5FE74003F90F6 /* TiChartsModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsModuleAssets.m; path = Classes/TiChartsModuleAssets.m; sourceTree = "<group>"; };
+		A250D63713B503DB00CCF89C /* TiChartsLinePlotProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsLinePlotProxy.h; path = Classes/TiChartsLinePlotProxy.h; sourceTree = "<group>"; };
+		A250D63813B503DB00CCF89C /* TiChartsLinePlotProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsLinePlotProxy.m; path = Classes/TiChartsLinePlotProxy.m; sourceTree = "<group>"; };
+		A250D68213B5641A00CCF89C /* TiChartsPiePlotProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsPiePlotProxy.h; path = Classes/TiChartsPiePlotProxy.h; sourceTree = "<group>"; };
+		A250D68313B5641A00CCF89C /* TiChartsPiePlotProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsPiePlotProxy.m; path = Classes/TiChartsPiePlotProxy.m; sourceTree = "<group>"; };
+		A2818D8E14D36C9900F27ECA /* TiChartsLabelFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsLabelFormatter.h; path = Classes/TiChartsLabelFormatter.h; sourceTree = "<group>"; };
+		A2818D8F14D36C9900F27ECA /* TiChartsLabelFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsLabelFormatter.m; path = Classes/TiChartsLabelFormatter.m; sourceTree = "<group>"; };
+		A2818D9014D36C9900F27ECA /* TiChartsScatterPlotProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsScatterPlotProxy.h; path = Classes/TiChartsScatterPlotProxy.h; sourceTree = "<group>"; };
+		A2818D9114D36C9900F27ECA /* TiChartsScatterPlotProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsScatterPlotProxy.m; path = Classes/TiChartsScatterPlotProxy.m; sourceTree = "<group>"; };
+		A296E82B13B9149700078A0D /* TiChartsParsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsParsers.h; path = Classes/TiChartsParsers.h; sourceTree = "<group>"; };
+		A296E82C13B9149700078A0D /* TiChartsParsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsParsers.m; path = Classes/TiChartsParsers.m; sourceTree = "<group>"; };
+		A2CDDAD213AFA8E80070F957 /* TiChartsChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsChart.h; path = Classes/TiChartsChart.h; sourceTree = "<group>"; };
+		A2CDDAD313AFA8E80070F957 /* TiChartsChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsChart.m; path = Classes/TiChartsChart.m; sourceTree = "<group>"; };
+		A2CDDB5C13AFDC7C0070F957 /* TiChartsChartProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsChartProxy.h; path = Classes/TiChartsChartProxy.h; sourceTree = "<group>"; };
+		A2CDDB5D13AFDC7C0070F957 /* TiChartsChartProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsChartProxy.m; path = Classes/TiChartsChartProxy.m; sourceTree = "<group>"; };
+		A2CDDBE913AFE59A0070F957 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A2CDDBEB13AFE5AF0070F957 /* libCorePlot-CocoaTouch.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libCorePlot-CocoaTouch.a"; path = "CorePlot/libCorePlot-CocoaTouch.a"; sourceTree = "<group>"; };
+		A2D8200A13B3D2E600E057CC /* TiChartsBarPlotProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsBarPlotProxy.h; path = Classes/TiChartsBarPlotProxy.h; sourceTree = "<group>"; };
+		A2D8200B13B3D2E600E057CC /* TiChartsBarPlotProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsBarPlotProxy.m; path = Classes/TiChartsBarPlotProxy.m; sourceTree = "<group>"; };
+		A2E3C5AD13BACB78001CCC8C /* TiChartsPlotProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TiChartsPlotProxy.h; path = Classes/TiChartsPlotProxy.h; sourceTree = "<group>"; };
+		A2E3C5AE13BACB78001CCC8C /* TiChartsPlotProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TiChartsPlotProxy.m; path = Classes/TiChartsPlotProxy.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* TiCharts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiCharts_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2AAC07E0554694100DB518D /* libTiCharts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTiCharts.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */,
+				A2CDDBEA13AFE59A0070F957 /* QuartzCore.framework in Frameworks */,
+				A2CDDBEC13AFE5AF0070F957 /* libCorePlot-CocoaTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libTiCharts.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* charts */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = charts;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2CDDBEB13AFE5AF0070F957 /* libCorePlot-CocoaTouch.a */,
+				AACBBE490F95108600F1A2B1 /* Foundation.framework */,
+				A2CDDBE913AFE59A0070F957 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A2818D8E14D36C9900F27ECA /* TiChartsLabelFormatter.h */,
+				A2818D8F14D36C9900F27ECA /* TiChartsLabelFormatter.m */,
+				A2818D9014D36C9900F27ECA /* TiChartsScatterPlotProxy.h */,
+				A2818D9114D36C9900F27ECA /* TiChartsScatterPlotProxy.m */,
+				A2E3C5AD13BACB78001CCC8C /* TiChartsPlotProxy.h */,
+				A2E3C5AE13BACB78001CCC8C /* TiChartsPlotProxy.m */,
+				A2D8200A13B3D2E600E057CC /* TiChartsBarPlotProxy.h */,
+				A2D8200B13B3D2E600E057CC /* TiChartsBarPlotProxy.m */,
+				24DE9E0F11C5FE74003F90F6 /* TiChartsModuleAssets.h */,
+				24DE9E1011C5FE74003F90F6 /* TiChartsModuleAssets.m */,
+				24DD6CF71134B3F500162E58 /* TiChartsModule.h */,
+				24DD6CF81134B3F500162E58 /* TiChartsModule.m */,
+				A2CDDAD213AFA8E80070F957 /* TiChartsChart.h */,
+				A2CDDAD313AFA8E80070F957 /* TiChartsChart.m */,
+				A2CDDB5C13AFDC7C0070F957 /* TiChartsChartProxy.h */,
+				A2CDDB5D13AFDC7C0070F957 /* TiChartsChartProxy.m */,
+				A250D63713B503DB00CCF89C /* TiChartsLinePlotProxy.h */,
+				A250D63813B503DB00CCF89C /* TiChartsLinePlotProxy.m */,
+				A250D68213B5641A00CCF89C /* TiChartsPiePlotProxy.h */,
+				A250D68313B5641A00CCF89C /* TiChartsPiePlotProxy.m */,
+				A296E82B13B9149700078A0D /* TiChartsParsers.h */,
+				A296E82C13B9149700078A0D /* TiChartsParsers.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* TiCharts_Prefix.pch */,
+				24DD6D1B1134B66800162E58 /* titanium.xcconfig */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* TiCharts_Prefix.pch in Headers */,
+				24DD6CF91134B3F500162E58 /* TiChartsModule.h in Headers */,
+				24DE9E1111C5FE74003F90F6 /* TiChartsModuleAssets.h in Headers */,
+				A2CDDAD413AFA8E80070F957 /* TiChartsChart.h in Headers */,
+				A2CDDB5E13AFDC7C0070F957 /* TiChartsChartProxy.h in Headers */,
+				A2D8200C13B3D2E600E057CC /* TiChartsBarPlotProxy.h in Headers */,
+				A250D63913B503DB00CCF89C /* TiChartsLinePlotProxy.h in Headers */,
+				A250D68413B5641A00CCF89C /* TiChartsPiePlotProxy.h in Headers */,
+				A296E82D13B9149700078A0D /* TiChartsParsers.h in Headers */,
+				A2E3C5AF13BACB78001CCC8C /* TiChartsPlotProxy.h in Headers */,
+				A2818D9214D36C9900F27ECA /* TiChartsLabelFormatter.h in Headers */,
+				A2818D9414D36C9900F27ECA /* TiChartsScatterPlotProxy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* charts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "charts" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = charts;
+			productName = charts;
+			productReference = D2AAC07E0554694100DB518D /* libTiCharts.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "charts" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* charts */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* charts */,
+				24416B8111C4CA220047AFDD /* Build & Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24416B8011C4CA220047AFDD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\n\npython \"${TITANIUM_SDK}/titanium.py\" run --dir=\"${PROJECT_DIR}\"\nexit $?\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24DD6CFA1134B3F500162E58 /* TiChartsModule.m in Sources */,
+				24DE9E1211C5FE74003F90F6 /* TiChartsModuleAssets.m in Sources */,
+				A2CDDAD513AFA8E80070F957 /* TiChartsChart.m in Sources */,
+				A2CDDB5F13AFDC7C0070F957 /* TiChartsChartProxy.m in Sources */,
+				A2D8200D13B3D2E600E057CC /* TiChartsBarPlotProxy.m in Sources */,
+				A250D63A13B503DB00CCF89C /* TiChartsLinePlotProxy.m in Sources */,
+				A250D68513B5641A00CCF89C /* TiChartsPiePlotProxy.m in Sources */,
+				A296E82E13B9149700078A0D /* TiChartsParsers.m in Sources */,
+				A2E3C5B013BACB78001CCC8C /* TiChartsPlotProxy.m in Sources */,
+				A2818D9314D36C9900F27ECA /* TiChartsLabelFormatter.m in Sources */,
+				A2818D9514D36C9900F27ECA /* TiChartsScatterPlotProxy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24416B8511C4CA280047AFDD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC07D0554694100DB518D /* charts */;
+			targetProxy = 24416B8411C4CA280047AFDD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiCharts.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiCharts_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/CorePlot\"",
+				);
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiCharts;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/TiCharts.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiCharts_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/CorePlot\"",
+				);
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiCharts;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DSTROOT = /tmp/TiCharts.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiCharts_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_CFLAGS = (
+					"-DDEBUG",
+					"-DTI_POST_1_2",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiCharts;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphoneos*]" = (
+					armv6,
+					armv7,
+				);
+				"ARCHS[sdk=iphonesimulator*]" = i386;
+				DSTROOT = /tmp/TiCharts.dst;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TiCharts_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "TI_VERSION=$(TI_VERSION)";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_MISSING_PARENTHESES = NO;
+				GCC_WARN_SHADOW = NO;
+				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_PARAMETER = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INSTALL_PATH = /usr/local/lib;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DTI_POST_1_2";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = TiCharts;
+				RUN_CLANG_STATIC_ANALYZER = NO;
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		24416B8211C4CA220047AFDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Build & test";
+			};
+			name = Debug;
+		};
+		24416B8311C4CA220047AFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24DD6D1B1134B66800162E58 /* titanium.xcconfig */;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Build & test";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "charts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24416B8A11C4CA520047AFDD /* Build configuration list for PBXAggregateTarget "Build & Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24416B8211C4CA220047AFDD /* Debug */,
+				24416B8311C4CA220047AFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
