@@ -96,7 +96,7 @@
         } else if (coordinate == CPTScatterPlotFieldY) {
             return val;
         } else {
-            return [NSDecimalNumber numberWithUnsignedInt:index];
+            return [NSDecimalNumber numberWithUnsignedInteger:index];
         }
     }
     
@@ -154,7 +154,7 @@
 	[self performSelectorOnMainThread:@selector(reconfigurePlot) withObject:nil waitUntilDone:NO];
 }
 
--(void)addData:(NSArray*)values startingAtIndex:(int)index
+-(void)addData:(NSArray*)values startingAtIndex:(NSUInteger)index
 {
 	if (values != nil) {
 		Class dictionaryClass = [NSDictionary class];
@@ -268,7 +268,7 @@
 {
 	if ([self _hasListeners:@"dataClicked"]) {
 		NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
-                               NUMINT(index),@"index",
+                               [NSNumber numberWithUnsignedInteger:index],@"index",
                                [self numberForPlot:index],@"value",
                                plot.identifier,@"name",                                
                                nil
@@ -293,7 +293,7 @@
 
 	if ([self _hasListeners:@"dataClicked"]) {
 		NSDictionary *event = [NSDictionary dictionaryWithObjectsAndKeys:
-								  NUMINT(index),@"index",
+								  [NSNumber numberWithUnsignedInteger:index],@"index",
 							      [self numberForPlot:index],@"value",
 							      self.plot.identifier,@"name",
                                   NUMINT(viewPoint.x),@"x",

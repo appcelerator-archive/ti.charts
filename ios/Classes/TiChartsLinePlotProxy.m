@@ -88,12 +88,12 @@
 
 -(NSNumber*)numberForPlot:(CPTPlot*)plot field:(NSUInteger)fieldEnum recordIndex:(NSUInteger)index
 {
-    return [self numberForPlot:index forCoordinate:fieldEnum];
+    return [self numberForPlot:index forCoordinate:(CPTCoordinate)fieldEnum];
 }
 
 -(NSNumber*)highlightIndex
 {
-    return NUMINT(highlightSymbolIndex);
+    return [NSNumber numberWithUnsignedInteger:highlightSymbolIndex];
 }
 
 -(void)setHighlightIndex:(id)value
