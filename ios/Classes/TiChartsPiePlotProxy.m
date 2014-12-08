@@ -78,7 +78,7 @@
 	if (fieldEnum == CPTPieChartFieldSliceWidth) {
 		num = [self numberForPlot:index];
 	} else { 
-		num = [NSNumber numberWithInt:index];
+		num = [NSNumber numberWithUnsignedInteger:index];
 	}
 	
 	return num;
@@ -103,7 +103,7 @@
 
 -(CGFloat)radialOffsetForPieChart:(CPTPieChart *)pieChart recordIndex:(NSUInteger)index
 {
-	if ([explodeSet containsObject:[NSNumber numberWithInt:index]]) {
+	if ([explodeSet containsObject:[NSNumber numberWithUnsignedInteger:index]]) {
 		float amt = (float)[TiUtils floatValue:[self valueForUndefinedKey:@"explodeOffset"] def:0.0];
 		return amt;
 	}

@@ -85,7 +85,7 @@
 
 -(NSDictionary*)dataPointFromIndex:(id)args
 {
-    ENSURE_ARG_COUNT(args,1)
+    ENSURE_ARG_COUNT(args, 1);
     int index = [TiUtils intValue:[args objectAtIndex:0] def:0];
 
     double pts[2];

@@ -1,5 +1,7 @@
 # Change Log
 <pre>
+v1.5.0  [TIMOB-18092] Updated to build for 64bit
+
 v1.4.1  [MOD-1120] Building with 2.1.3.GA and open sourcing
 	
 v1.4    [MOD-557] Removed 'all_load' from module.xcconfig for compatibility with Titanium SDK 2.0.0
