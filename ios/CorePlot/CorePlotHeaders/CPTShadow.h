@@ -1,13 +1,10 @@
-#import <Foundation/Foundation.h>
-#import <QuartzCore/QuartzCore.h>
-
 @class CPTColor;
 
 @interface CPTShadow : NSObject<NSCoding, NSCopying, NSMutableCopying> {
-	@private
-	CGSize shadowOffset;
-	CGFloat shadowBlurRadius;
-	CPTColor *shadowColor;
+    @private
+    CGSize shadowOffset;
+    CGFloat shadowBlurRadius;
+    CPTColor *shadowColor;
 }
 
 @property (nonatomic, readonly, assign) CGSize shadowOffset;
@@ -17,11 +14,11 @@
 /// @name Factory Methods
 /// @{
 +(id)shadow;
-///	@}
+/// @}
 
 /// @name Drawing
 /// @{
--(void)setShadowInContext:(CGContextRef)theContext;
-///	@}
+-(void)setShadowInContext:(CGContextRef)context;
+/// @}
 
 @end

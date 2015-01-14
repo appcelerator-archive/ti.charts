@@ -1,5 +1,4 @@
 #import "CPTLineStyle.h"
-#import <Foundation/Foundation.h>
 
 @class CPTColor;
 
@@ -13,5 +12,7 @@
 @property (nonatomic, readwrite, retain) NSArray *dashPattern;
 @property (nonatomic, readwrite, assign) CGFloat patternPhase;
 @property (nonatomic, readwrite, retain) CPTColor *lineColor;
+@property (nonatomic, readwrite, retain) CPTFill *lineFill;
+@property (nonatomic, readwrite, retain) CPTGradient *lineGradient;
 
 @end

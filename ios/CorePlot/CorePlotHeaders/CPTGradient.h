@@ -4,35 +4,34 @@
 /// @file
 
 #import "CPTDefinitions.h"
-#import <Foundation/Foundation.h>
 
 /**
- *	@brief A structure representing one node in a linked list of RGBA colors.
+ *  @brief A structure representing one node in a linked list of RGBA colors.
  **/
 typedef struct _CPTGradientElement {
-	CPTRGBAColor color; ///< Color
-	CGFloat position;   ///< Gradient position (0 ≤ position ≤ 1)
+    CPTRGBAColor color; ///< Color
+    CGFloat position;   ///< Gradient position (0 ≤ @par{position} ≤ 1)
 
-	struct _CPTGradientElement *nextElement; ///< Pointer to the next CPTGradientElement in the list (last element == NULL)
+    struct _CPTGradientElement *nextElement; ///< Pointer to the next CPTGradientElement in the list (last element == @NULL)
 }
 CPTGradientElement;
 
 /**
- *	@brief Enumeration of blending modes
+ *  @brief Enumeration of blending modes
  **/
 typedef enum _CPTBlendingMode {
-	CPTLinearBlendingMode,          ///< Linear blending mode
-	CPTChromaticBlendingMode,       ///< Chromatic blending mode
-	CPTInverseChromaticBlendingMode ///< Inverse chromatic blending mode
+    CPTLinearBlendingMode,          ///< Linear blending mode
+    CPTChromaticBlendingMode,       ///< Chromatic blending mode
+    CPTInverseChromaticBlendingMode ///< Inverse chromatic blending mode
 }
 CPTGradientBlendingMode;
 
 /**
- *	@brief Enumeration of gradient types
+ *  @brief Enumeration of gradient types
  **/
 typedef enum _CPTGradientType {
-	CPTGradientTypeAxial, ///< Axial gradient
-	CPTGradientTypeRadial ///< Radial gradient
+    CPTGradientTypeAxial, ///< Axial gradient
+    CPTGradientTypeRadial ///< Radial gradient
 }
 CPTGradientType;
 
@@ -40,18 +39,35 @@ CPTGradientType;
 @class CPTColor;
 
 @interface CPTGradient : NSObject<NSCopying, NSCoding> {
-	@private
-	CPTColorSpace *colorspace;
-	CPTGradientElement *elementList;
-	CPTGradientBlendingMode blendingMode;
-	CGFunctionRef gradientFunction;
-	CGFloat angle; // angle in degrees
-	CPTGradientType gradientType;
+    @private
+    CPTColorSpace *colorspace;
+    CPTGradientElement *elementList;
+    CPTGradientBlendingMode blendingMode;
+    CGFunctionRef gradientFunction;
+    CGFloat angle; // angle in degrees
+    CPTGradientType gradientType;
+    CGPoint startAnchor;
+    CGPoint endAnchor;
 }
 
+@property (nonatomic, readonly, getter = isOpaque) BOOL opaque;
+
+/// @name Gradient Type
+/// @{
 @property (nonatomic, readonly, assign) CPTGradientBlendingMode blendingMode;
-@property (nonatomic, readwrite, assign) CGFloat angle;
 @property (nonatomic, readwrite, assign) CPTGradientType gradientType;
+/// @}
+
+/// @name Axial Gradients
+/// @{
+@property (nonatomic, readwrite, assign) CGFloat angle;
+/// @}
+
+/// @name Radial Gradients
+/// @{
+@property (nonatomic, readwrite, assign) CGPoint startAnchor;
+@property (nonatomic, readwrite, assign) CGPoint endAnchor;
+/// @}
 
 /// @name Factory Methods
 /// @{
@@ -72,7 +88,7 @@ CPTGradientType;
 
 +(CPTGradient *)rainbowGradient;
 +(CPTGradient *)hydrogenSpectrumGradient;
-///	@}
+/// @}
 
 /// @name Modification
 /// @{
@@ -80,21 +96,21 @@ CPTGradientType;
 -(CPTGradient *)gradientWithBlendingMode:(CPTGradientBlendingMode)mode;
 
 -(CPTGradient *)addColorStop:(CPTColor *)color atPosition:(CGFloat)position; // positions given relative to [0,1]
--(CPTGradient *)removeColorStopAtIndex:(NSUInteger)index;
+-(CPTGradient *)removeColorStopAtIndex:(NSUInteger)idx;
 -(CPTGradient *)removeColorStopAtPosition:(CGFloat)position;
-///	@}
+/// @}
 
 /// @name Information
 /// @{
--(CGColorRef)newColorStopAtIndex:(NSUInteger)index;
+-(CGColorRef)newColorStopAtIndex:(NSUInteger)idx;
 -(CGColorRef)newColorAtPosition:(CGFloat)position;
-///	@}
+/// @}
 
 /// @name Drawing
 /// @{
 -(void)drawSwatchInRect:(CGRect)rect inContext:(CGContextRef)context;
 -(void)fillRect:(CGRect)rect inContext:(CGContextRef)context;
 -(void)fillPathInContext:(CGContextRef)context;
-///	@}
+/// @}
 
 @end

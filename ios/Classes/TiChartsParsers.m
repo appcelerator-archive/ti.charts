@@ -274,18 +274,18 @@
                 // this is done with the '#' and '0' characters (e.g. "###0.00"). Optionally, prefix and suffix strings can
                 // be specified. See http://unicode.org/reports/tr35/tr35-6.html#Number_Format_Patterns for details.
                 if (axis.labelFormatter) {
-                    axis.labelFormatter.positiveFormat = [TiUtils stringValue:@"numberFormatPositive" properties:labelProps
-                                                                          def:[TiUtils stringValue:@"numberFormat" properties:labelProps def:axis.labelFormatter.positiveFormat]];    
-                    axis.labelFormatter.negativeFormat = [TiUtils stringValue:@"numberFormatNegative" properties:labelProps
-                                                                          def:[TiUtils stringValue:@"numberFormat" properties:labelProps def:axis.labelFormatter.negativeFormat]];    
-                    axis.labelFormatter.positivePrefix = [TiUtils stringValue:@"numberPrefixPositive" properties:labelProps 
-                                                                          def:[TiUtils stringValue:@"numberPrefix" properties:labelProps def:axis.labelFormatter.positivePrefix]];
-                    axis.labelFormatter.negativePrefix = [TiUtils stringValue:@"numberPrefixNegative" properties:labelProps
-                                                                          def:[TiUtils stringValue:@"numberPrefix" properties:labelProps def:axis.labelFormatter.negativePrefix]];
-                    axis.labelFormatter.positiveSuffix = [TiUtils stringValue:@"numberSuffixPositive" properties:labelProps 
-                                                                          def:[TiUtils stringValue:@"numberSuffix" properties:labelProps def:axis.labelFormatter.positiveSuffix]];
-                    axis.labelFormatter.negativeSuffix = [TiUtils stringValue:@"numberSuffixNegative" properties:labelProps
-                                                                          def:[TiUtils stringValue:@"numberSuffix" properties:labelProps def:axis.labelFormatter.negativeSuffix]];
+                    ((NSNumberFormatter *) axis.labelFormatter).positiveFormat = [TiUtils stringValue:@"numberFormatPositive" properties:labelProps
+                                                                          def:[TiUtils stringValue:@"numberFormat" properties:labelProps def:((NSNumberFormatter *) axis.labelFormatter).positiveFormat]];    
+                    ((NSNumberFormatter *) axis.labelFormatter).negativeFormat = [TiUtils stringValue:@"numberFormatNegative" properties:labelProps
+                                                                          def:[TiUtils stringValue:@"numberFormat" properties:labelProps def:((NSNumberFormatter *) axis.labelFormatter).negativeFormat]];    
+                    ((NSNumberFormatter *) axis.labelFormatter).positivePrefix = [TiUtils stringValue:@"numberPrefixPositive" properties:labelProps 
+                                                                          def:[TiUtils stringValue:@"numberPrefix" properties:labelProps def:((NSNumberFormatter *) axis.labelFormatter).positivePrefix]];
+                    ((NSNumberFormatter *) axis.labelFormatter).negativePrefix = [TiUtils stringValue:@"numberPrefixNegative" properties:labelProps
+                                                                          def:[TiUtils stringValue:@"numberPrefix" properties:labelProps def:((NSNumberFormatter *) axis.labelFormatter).negativePrefix]];
+                    ((NSNumberFormatter *) axis.labelFormatter).positiveSuffix = [TiUtils stringValue:@"numberSuffixPositive" properties:labelProps 
+                                                                          def:[TiUtils stringValue:@"numberSuffix" properties:labelProps def:((NSNumberFormatter *) axis.labelFormatter).positiveSuffix]];
+                    ((NSNumberFormatter *) axis.labelFormatter).negativeSuffix = [TiUtils stringValue:@"numberSuffixNegative" properties:labelProps
+                                                                          def:[TiUtils stringValue:@"numberSuffix" properties:labelProps def:((NSNumberFormatter *) axis.labelFormatter).negativeSuffix]];
                 }
             }
         }		
