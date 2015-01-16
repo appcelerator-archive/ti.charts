@@ -1,5 +1,7 @@
 # Change Log
 <pre>
+v1.5.1  [TIMOB-18092] Updated Core-Plot library to include x86_64
+
 v1.5.0  [TIMOB-18092] Updated to build for 64bit
 
 v1.4.1  [MOD-1120] Building with 2.1.3.GA and open sourcing

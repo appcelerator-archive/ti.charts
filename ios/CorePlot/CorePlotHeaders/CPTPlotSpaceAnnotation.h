@@ -1,11 +1,11 @@
 #import "CPTAnnotation.h"
-#import <Foundation/Foundation.h>
 
 @class CPTPlotSpace;
 
 @interface CPTPlotSpaceAnnotation : CPTAnnotation {
-	NSArray *anchorPlotPoint;
-	CPTPlotSpace *plotSpace;
+    @private
+    NSArray *anchorPlotPoint;
+    CPTPlotSpace *plotSpace;
 }
 
 @property (nonatomic, readwrite, copy) NSArray *anchorPlotPoint;
